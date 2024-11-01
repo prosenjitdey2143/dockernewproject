@@ -8,14 +8,14 @@ services:
       replicas: 3
 
   train:
-    image: prosenjitdey:train:latest
+    image: prosenjitdey/train:latest
     ports:
       - "82:80"
     deploy:
-      resplicas: 3
+      replicas: 3
 
   paytm:
-    image: prosenjitdey:paytm:latest
+    image: prosenjitdey/paytm:latest
     ports:
       - "83:80"
     deploy:
